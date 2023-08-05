@@ -38,4 +38,4 @@ class VideoWriter:
   def show(self, **kw):
       self.close()
       fn = self.params['filename']
-      display(mvp.ipython_display(fn, **kw))
+      display(mvp.ipython_display(fn, maxduration=float('inf'), **kw))
